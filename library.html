@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <dialog id="favDialog">
+        <form>
+          <p>
+            <label for="title">Book Name</label>
+            <input type="text" name="title" id="title" />
+            <label for="author">Author Name</label>
+            <input type="text" name="author" id="author" />
+            <label for="pages">Number of pages</label>
+            <input type="number" name="pages" id="pages" />
+            <label for="read">Read</label>
+            <input type="checkbox" name="read" id="read" />
+          </p>
+          <button type="button" value="cancel" formmethod="dialog">
+            Cancel
+          </button>
+          <button id="confirmBtn" value="default">Confirm</button>
+        </form>
+      </dialog>
+      <p><button id="showDialog">Add Books</button></p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Book Name</th>
+          <th>Author</th>
+          <th>Number of Pages</th>
+          <th>Read</th>
+          <th>Action</th>
+          <th>Toogle Read</th>
+        </tr>
+      </thead>
+      <tbody id="datatable"></tbody>
+    </table>
+    <script src="library.js"></script>
+  </body>
+</html>
