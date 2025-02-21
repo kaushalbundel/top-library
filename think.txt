@@ -1,0 +1,20 @@
+- The source file contains certain functions. This whole code block should be converted into classes and then those classes should be used instead of the functional code. 
+
+- The whole system should work as it was working before.
+
+- Implementation
+
+    - The code will be organized both inline and in classes
+    - The data which is being captured will be captured in the form of classes
+    - Then there will be some functionality that should be embedded. This can be done in the form of methods. 
+    - Actually the problem is to see if I use the Book class as the focal point and keep myLibrary inside the class or get the myLibrary array inside the class and use that data structure as the base.
+    - I will have to distinguish between what will happen in class level vs what will happen outside the class
+
+
+    - Problem faced by me: How to organize the code into related bits? For eg, If I create Books as the center piece constructor then how can I use that to have a library where the individual book instances are the elements of the library array. 
+
+    - Solution: Use library as the base and then use another class inside the class Book to store the data in library.
+
+    - Problem: How to create individual behavior/ methods?
+
+        - I have already defined these functions and I can use these functions. 
